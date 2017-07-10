@@ -1,0 +1,33 @@
+{
+  "name": "cucumberjs-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumberjs",
+    "report:createJson": "cucumberjs -f json:cucumber_report.json",
+    "report:createHtml": "node reporter",
+    "report:open": "open reports/report.html",
+    "report": "npm run report:createJson && npm run report:createHtml",
+    "coverage": "istanbul cover cucumberjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://alincode@github.com/alincode/cucumberjs-sandbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alincode/cucumberjs-sandbox/issues"
+  },
+  "homepage": "https://github.com/alincode/cucumberjs-sandbox#readme",
+  "devDependencies": {
+    "cucumber": "^1.3.0",
+    "cucumber-html-reporter": "^0.5.2"
+  },
+  "dependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5"
+  }
+}
